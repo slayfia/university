@@ -1,0 +1,39 @@
+cort = ()
+cort_one = (1,)
+print(cort_one)
+cort_1 = (1,2,3,4,5)
+print(cort_1)
+one,two,three,four,five = cort_1
+print(cort_1*2)
+court_2 = ("apple", "banana", "cherry")
+print(court_2)
+print("apple" in court_2)    # True
+print("orange" in court_2)   # False
+zriz = cort_1[1:4]
+print(zriz)
+
+court_3 = (1,1,2,3,4,4,5,6)
+
+znach = int(input("введіть значення (завдання 11):"))
+
+if znach in court_3:
+    inde = court_3.index(znach)
+    print(f"Значення {znach} є у кортежі, перший індекс: {inde}")
+else:
+    print(f"Значення {znach} відсутнє у кортежі.")
+znach_1 = int(input("введіть значення 1(завдання 12):"))
+znach_2 = int(input("введіть значення 2(завдання 12):"))
+
+if znach_1 in court_3[2:]:
+    ind_1 = court_3.index(znach_1,2)
+    print(f"Значення {znach_1} знайдено з індексу 2: {ind_1}")
+else:
+    print(f"Значення {znach_1} не знайдено з індексу 2")
+
+if znach_2 in court_3[2:]:
+    ind_2 = court_3.index(znach_2,2)
+    print(f"Значення {znach_2} знайдено з індексу 2: {ind_2}")
+else:
+    print(f"Значення {znach_2} не знайдено з індексу 2")
+
+print("Кількість входжень 1:", court_3.count(1))
